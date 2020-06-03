@@ -1,0 +1,4 @@
+SELECT world_happiness.country, world_happiness.economy_gdp_per_capita, world_happiness.happiness_rank, world_happiness.happiness_score, world_bank.current_health_expenditure, world_bank.domestic_government_health_expenditure,world_bank.out_of_pocket_expenditure
+FROM world_happiness
+INNER JOIN world_bank ON
+world_happiness.country=world_bank.country;
